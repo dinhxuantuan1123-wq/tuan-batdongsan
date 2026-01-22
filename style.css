@@ -175,4 +175,32 @@ body {
         transform: translateY(0);
     }
 }
+/* Nhà Thuê */
+.rent-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background: #e5e7eb;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab.active {
+    background: #1e3a8a;
+    color: white;
+}
+
+.rent-section {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+}
 

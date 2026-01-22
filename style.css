@@ -82,25 +82,60 @@ footer {
     font-weight: bold;
 }
 
-.contact-page {
+
+<!-- phần liên hệ -->
+
+.contact-hero {
+    background: url("https://images.unsplash.com/photo-1600585152220-90363fe7e115") center/cover;
+    padding: 120px 20px;
+    color: white;
     text-align: center;
-    padding: 100px 20px;
+}
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.contact-box {
+    background: white;
+    max-width: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.contact-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.contact-box h2 {
+    margin: 20px 0;
 }
 
 .contact-buttons a {
-    display: inline-block;
-    margin: 20px;
-    padding: 20px 40px;
-    background: #1e3a8a;
-    color: white;
-    text-decoration: none;
+    display: block;
+    margin: 15px 40px 30px;
+    padding: 15px;
     font-size: 22px;
     border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.contact-buttons a:hover {
-    background: #f59e0b;
+.contact-buttons .fb {
+    background: #1877f2;
 }
+
+.contact-buttons .tt {
+    background: #000;
+}
+
 
 
 

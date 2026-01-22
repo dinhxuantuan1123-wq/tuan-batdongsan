@@ -4,6 +4,22 @@
 <meta charset="UTF-8">
 <title>Nhà bán – Đinh Tuấn Real Estate</title>
 <link rel="stylesheet" href="style.css">
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function(e) {
+            if (this.getAttribute("href").includes(".html")) {
+                e.preventDefault();
+                document.body.style.opacity = 0;
+                setTimeout(() => {
+                    window.location = this.href;
+                }, 300);
+            }
+        });
+    });
+});
+</script>
+
 </head>
 <body>
 

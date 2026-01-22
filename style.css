@@ -1,42 +1,78 @@
 body {
-    font-family: Arial;
     margin: 0;
+    font-family: Arial;
     background: #f4f4f4;
 }
 
-header {
+.top {
     background: #0f172a;
     color: white;
-    padding: 20px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
+.top a {
     color: white;
-    margin-right: 20px;
+    margin-left: 20px;
     text-decoration: none;
 }
 
 .hero {
+    background: url("https://images.unsplash.com/photo-1600585152220-90363fe7e115") center/cover;
+    padding: 120px 40px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background: #f59e0b;
+    border: none;
+}
+
+.listings {
+    padding: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.house {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.house img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+}
+
+.contact {
     background: #1e3a8a;
     color: white;
     padding: 60px;
     text-align: center;
 }
 
-.listings {
-    padding: 30px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-}
-
 footer {
     background: #0f172a;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }

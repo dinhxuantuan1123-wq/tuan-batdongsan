@@ -1,69 +1,80 @@
+/* Reset khoảng cách mặc định và font chữ toàn trang */
 body {
     margin: 0;
     font-family: Arial;
-    background: #f4f4f4;
+    background: #f4f4f4;   /* màu nền xám nhạt */
 }
 
+/* Thanh menu trên cùng */
 .top {
-    background: #0f172a;
+    background: #0f172a;   /* xanh đậm */
     color: white;
     padding: 20px 40px;
-    display: flex;
+    display: flex;        /* logo bên trái, menu bên phải */
     justify-content: space-between;
     align-items: center;
 }
 
+/* Link trong menu */
 .top a {
     color: white;
     margin-left: 20px;
-    text-decoration: none;
+    text-decoration: none; /* bỏ gạch chân */
 }
 
+/* Banner lớn đầu trang */
 .hero {
     background: url("https://images.unsplash.com/photo-1600585152220-90363fe7e115") center/cover;
-    padding: 120px 40px;
+    padding: 120px 40px;  /* tạo chiều cao banner */
     color: white;
 }
 
+/* Tiêu đề lớn */
 .hero h1 {
     font-size: 48px;
 }
 
+/* Nút trong banner */
 .hero button {
     padding: 15px 30px;
     font-size: 16px;
-    background: #f59e0b;
+    background: #f59e0b; /* màu vàng cam */
     border: none;
 }
 
+/* Khu vực danh sách nhà */
 .listings {
     padding: 50px;
 }
 
+/* Lưới hiển thị nhà */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 30px; /* khoảng cách giữa các căn */
 }
 
+/* Thẻ từng căn nhà */
 .house {
     background: white;
     border-radius: 12px;
-    overflow: hidden;
+    overflow: hidden; /* bo góc ảnh */
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
+/* Ảnh căn nhà */
 .house img {
     width: 100%;
     height: 100px;
-    object-fit: cover;
+    object-fit: cover; /* cắt ảnh cho vừa */
 }
 
-
+/* Thông tin dưới ảnh */
 .info {
     padding: 20px;
 }
 
+/* Phần liên hệ cuối trang chủ */
 .contact {
     background: #1e3a8a;
     color: white;
@@ -71,21 +82,26 @@ body {
     text-align: center;
 }
 
+/* Chân trang */
 footer {
     background: #0f172a;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
+/* Logo chữ */
 .logo {
     font-size: 45px;
     font-weight: bold;
 }
 
 
-/* phần liên hệ */
+/* ===========================
+   PHẦN TRANG LIÊN HỆ
+   =========================== */
 
-
+/* Ảnh nền lớn trên đầu trang liên hệ */
 .contact-hero {
     background: url("https://images.unsplash.com/photo-1600585152220-90363fe7e115") center/cover;
     padding: 120px 20px;
@@ -93,12 +109,14 @@ footer {
     text-align: center;
 }
 
+/* Căn giữa nội dung */
 .contact-page {
     display: flex;
     justify-content: center;
     padding: 60px 20px;
 }
 
+/* Khung trắng */
 .contact-box {
     background: white;
     max-width: 500px;
@@ -108,16 +126,19 @@ footer {
     text-align: center;
 }
 
+/* Ảnh nhà trong trang liên hệ */
 .contact-box img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
+/* Tiêu đề trong khung */
 .contact-box h2 {
     margin: 20px 0;
 }
 
+/* Nút Facebook, TikTok */
 .contact-buttons a {
     display: block;
     margin: 15px 40px 30px;
@@ -129,15 +150,12 @@ footer {
     font-weight: bold;
 }
 
+/* Màu Facebook */
 .contact-buttons .fb {
     background: #1877f2;
 }
 
+/* Màu TikTok */
 .contact-buttons .tt {
     background: #000;
 }
-
-
-
-
-

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Nhà thuê – Tuấn Real Estate</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".tab").forEach(tab => {
+        tab.addEventListener("click", function() {
+
+            document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+            document.querySelectorAll(".rent-section").forEach(s => s.style.display = "none");
+
+            this.classList.add("active");
+            document.getElementById(this.dataset.target).style.display = "grid";
+        });
+    });
+});
+</script>
+</head>
+
+<body>
+
+<header class="top">
+    <div class="logo">🏠 Tuấn Real Estate</div>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="nhaban.html">Nhà bán</a>
+        <a href="nhathue.html">Cho thuê</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
+</header>
+
+<!-- Thanh chọn loại nhà -->
+<div class="rent-tabs">
+    <div class="tab active" data-target="leo">Nhà Leopalace</div>
+    <div class="tab" data-target="ur">Nhà UR</div>
+    <div class="tab" data-target="vh">Nhà Village House</div>
+    <div class="tab" data-target="cheap">Nhà giá rẻ khác</div>
+</div>
+
+<!-- LEOPALACE -->
+<div class="rent-section" id="leo">
+    <div class="house">
+        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
+        <div class="info"><h3>Leopalace A</h3><p>50,000¥ / tháng</p></div>
+    </div>
+    <div class="house">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+        <div class="info"><h3>Leopalace B</h3><p>60,000¥ / tháng</p></div>
+    </div>
+</div>
+
+<!-- UR -->
+<div class="rent-section" id="ur" style="display:none;">
+    <div class="house">
+        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+        <div class="info"><h3>UR Apartment</h3><p>70,000¥ / tháng</p></div>
+    </div>
+</div>
+
+<!-- VILLAGE HOUSE -->
+<div class="rent-section" id="vh" style="display:none;">
+    <div class="house">
+        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
+        <div class="info"><h3>Village House</h3><p>40,000¥ / tháng</p></div>
+    </div>
+</div>
+
+<!-- GIÁ RẺ -->
+<div class="rent-section" id="cheap" style="display:none;">
+    <div class="house">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+        <div class="info"><h3>Nhà giá rẻ</h3><p>30,000¥ / tháng</p></div>
+    </div>
+</div>
+
+</body>
+</html>

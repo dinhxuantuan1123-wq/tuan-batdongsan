@@ -82,5 +82,25 @@ footer {
     font-weight: bold;
 }
 
+.contact-page {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 40px;
+    background: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.contact-buttons a:hover {
+    background: #f59e0b;
+}
+
 
 

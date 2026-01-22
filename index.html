@@ -10,21 +10,7 @@
     <!-- Kết nối với file CSS để trang có giao diện -->
     <link rel="stylesheet" href="style.css">
 
-    <script>
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", function(e) {
-            if (this.getAttribute("href").includes(".html")) {
-                e.preventDefault();
-                document.body.style.opacity = 0;
-                setTimeout(() => {
-                    window.location = this.href;
-                }, 300);
-            }
-        });
-    });
-});
-</script>
+   
 
 </head>
 <body>
@@ -101,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
+
 
 
 

@@ -5,20 +5,7 @@
 <title>Nhà thuê – Tuấn Real Estate</title>
 <link rel="stylesheet" href="style.css">
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".tab").forEach(tab => {
-        tab.addEventListener("click", function() {
 
-            document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-            document.querySelectorAll(".rent-section").forEach(s => s.style.display = "none");
-
-            this.classList.add("active");
-            document.getElementById(this.dataset.target).style.display = "grid";
-        });
-    });
-});
-</script>
 </head>
 
 <body>

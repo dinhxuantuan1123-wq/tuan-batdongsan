@@ -56,18 +56,44 @@ body {
 
 /* Thẻ từng căn nhà */
 .house {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden; /* bo góc ảnh */
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* Ảnh căn nhà */
 .house img {
     width: 100%;
-    height: 100px;
-    object-fit: cover; /* cắt ảnh cho vừa */
+    height: 260px;
+    object-fit: cover;
+    transition: 0.4s;
 }
+
+.house:hover img {
+    transform: scale(1.08);
+}
+.tag {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.tag h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.tag span {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
 
 /* Thông tin dưới ảnh */
 .info {
@@ -203,4 +229,5 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     gap: 30px;
 }
+
 

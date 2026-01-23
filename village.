@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Village House</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+    <div class="logo">Taha Homes</div>
+</header>
+
+<section class="listings">
+    <h2>Village House – Free đầu vào</h2>
+
+    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" style="width:100%;border-radius:20px">
+
+    <p>
+        Village House nổi tiếng tại Nhật vì chi phí vào nhà gần như 0 yên, không cần lễ kim,
+        rất phù hợp người Việt mới sang.
+    </p>
+</section>
+
+</body>
+</html>
